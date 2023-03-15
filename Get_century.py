@@ -1,5 +1,5 @@
 
-year = 2021
+year = 2121
 def get_century(year: int) -> int:
     # write your code here
     if year <= 100:
@@ -10,13 +10,13 @@ def get_century(year: int) -> int:
     return year // 100
 
 print(get_century(year))
-
+#######################
 ####Formula for finding the century (remainder of division and integer division)#####
 ##### Mentor resolution #####
 
 #def get_century(year: int) -> int:
-    if year == 0:
-        return 1
-    return (year + 99) // 100
+    # if year == 0:
+    #     return 1
+    # return (year + 99) // 100
 
 
