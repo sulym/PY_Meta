@@ -11,7 +11,6 @@ def get_product_id(url: str) -> str:
     return product
 
 print(get_product_id(url))
-
 ##############################
 ###### Mentor resolution #####
 ##############################
