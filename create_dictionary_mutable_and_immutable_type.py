@@ -16,3 +16,14 @@ def create_dictionary(*args) -> dict:
     return typ_key_dict
 
 print(create_dictionary(ar, rs, cl))
+
+######## Mentor resolution ########
+
+def create_dictionary(*args) -> dict:
+    my_dict = {}
+    for index, element in enumerate(args):
+        if isinstance(element, (list, set, dict)):
+            print(f"Cannot add {element} to the dict!")
+        else:
+            my_dict[element] = index
+    return my_dict
