@@ -89,11 +89,31 @@
 
 
 
-def capitals_first(sentence: str) -> str:
-    # write your code here
-    new_sentance = sentence.split()
-    new_sent = [new for new in new_sentance if new == new.upper() or new == new.capitalize()]
-    last = new_sent + [i for i in new_sentance if i == i.lower()]
-    return " ".join(last)
+# def capitals_first(sentence: str) -> str:
+#     # write your code here
+#     new_sentance = sentence.split()
+#     new_sent = [new for new in new_sentance if new == new.upper() or new == new.capitalize()]
+#     last = new_sent + [i for i in new_sentance if i == i.lower()]
+#     return " ".join(last)
 
-print(capitals_first("z x c b Z Z X CC B") )
+# print(capitals_first("z x c b Z Z X CC B") )
+
+# num_list = [-5, 0, 3, 5, 2]
+
+# def maximum_product(num_list: list) -> int:
+#     # write your code here
+#     new_ls = []
+#     for i in range(len(num_list)-1):
+#         new_ls.append(num_list[i] * num_list[i+1])
+#     return max(new_ls)
+
+
+# print(maximum_product(num_list))
+
+
+def shortest_word(sentence: str) -> int:
+    # write your code here
+    print(min(['Mate', 'Academy']))
+    return len(min(sentence.split()))
+
+print(shortest_word("Mate Academy"))
