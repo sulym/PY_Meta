@@ -22,7 +22,9 @@ def ingredients(func: Callable) -> Callable:
     return wrapper
 
 
-# write your code here
+@bread
+@ingredients
 def sandwich():
-    # write your code here
-    pass
+    print("   --ham--")
+
+print(sandwich())
