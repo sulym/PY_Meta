@@ -6,5 +6,4 @@ def majority_element(nums: list) -> int:
     b = [item for item in set(nums) if nums.count(item) > c]
     return b[0]
 
-
 print(majority_element(nums))
