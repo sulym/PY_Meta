@@ -7,3 +7,7 @@ def majority_element(nums: list) -> int:
     return b[0]
 
 print(majority_element(nums))
+
+#### M ####
+def majority_element(nums: list) -> int:
+    return max(set(nums), key=nums.count)
