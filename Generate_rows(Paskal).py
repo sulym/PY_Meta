@@ -1,3 +1,6 @@
 def generate_rows(rows: int) -> list:
     # write your code here
-    pass
+    ls = []
+    first = 1
+    for i in range(rows+1):
+        ls.append([])
