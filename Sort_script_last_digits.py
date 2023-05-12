@@ -9,12 +9,12 @@ def get_last_number(line: str) -> int:
     return int(re.findall(r'\d+', line)[-1])
 
 
-with open('ttt', 'r') as file: # Открывает файл ttt для чтения, используя контекстный менеджер with.
+with open('File_name', 'r') as file: # Открывает файл ttt для чтения, используя контекстный менеджер with.
     lines = file.readlines() # Читает все строки из файла ttt и сохраняет их в список lines.
     
 # Cортирует список lines с помощью функции sorted() и ключа сортировки get_last_number(),
 # Cохраняет отсортированный список строк в sorted_lines.
 sorted_lines = sorted(lines, key=get_last_number)
 
-with open('ttt', 'w') as file: #  Oткрывает файл ttt для записи.
+with open('File_name', 'w') as file: #  Oткрывает файл ttt для записи.
     file.writelines(sorted_lines) # Записывает все строки из списка sorted_lines в файл ttt.
