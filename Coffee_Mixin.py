@@ -48,4 +48,3 @@ class NoSugarMilkEspresso(NoSugarMixin, MilkMixin, Espresso):
     pass
 class CaffeineFreeNoSugarMilkAmericano(CaffeineFreeMixin,DoubleWaterMixin, NoSugarMixin, MilkMixin, Espresso):
     pass
-
