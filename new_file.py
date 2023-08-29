@@ -3,4 +3,3 @@ def lpop():
 
 print(lpop())
 
-000000
